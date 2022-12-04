@@ -23,16 +23,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_minimal.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Inherit from NT-S1 device
-$(call inherit-product, device/mid/NT-S1/device.mk)
+$(call inherit-product, device/mid/NT_S1/device.mk)
 
 # Inherit some common Omni stuff.
 $(call inherit-product, vendor/omni/config/common.mk)
 
 PRODUCT_COPY_FILES += $(LOCAL_PATH)/prebuilt/zImage-dtb:kernel
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := NT-S1
-PRODUCT_NAME := omni_NT-S1
-PRODUCT_BRAND := NT-S1
-PRODUCT_MODEL := NT-S1
+PRODUCT_DEVICE := NT_S1
+PRODUCT_NAME := omni_NT_S1
+PRODUCT_BRAND := NT_S1
+PRODUCT_MODEL := NT_S1
 PRODUCT_MANUFACTURER := mid
-PRODUCT_RELEASE_NAME := NT-S1 NT-S1
+PRODUCT_RELEASE_NAME := NT_S1 NT_S1

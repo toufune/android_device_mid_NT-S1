@@ -16,7 +16,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/mid/NT-S1
+DEVICE_PATH := device/mid/NT_S1
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -59,11 +59,11 @@ BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 TARGET_KERNEL_ARCH := arm
 TARGET_KERNEL_HEADER_ARCH := arm
-TARGET_KERNEL_SOURCE := kernel/mid/NT-S1
+TARGET_KERNEL_SOURCE := kernel/mid/NT_S1
 TARGET_KERNEL_CONFIG := NT-S1_defconfig
 
 # Set FSTAB
-TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/recovery/root/etc/recovery.fstab
+#TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/recovery/root/etc/recovery.fstab
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6737m
@@ -77,11 +77,9 @@ PLATFORM_VERSION := 16.1.0
 BOARD_HAS_MTK_HARDWARE := true
 BOARD_USES_MTK_HARDWARE := true
 MTK_HARDWARE := true
-COMMON_GLOBAL_CFLAGS += -DMTK_HARDWARE -DADD_LEGACY_ACQUIRE_BUFFER_SYMBOL
-COMMON_GLOBAL_CPPFLAGS += -DMTK_HARDWARE
 
 # TWRP Configuration
-TW_INCLUDE_CRYPTO := true
+#TW_INCLUDE_CRYPTO := true
 TW_THEME := portrait_hdpi
 #TW_EXTRA_LANGUAGES := true
 TW_SCREEN_BLANK_ON_BOOT := true
@@ -97,7 +95,7 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/mt_usb/musb-hdrc.0.auto
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/android0/f_mass_storage/lun/file
 TW_MAX_BRIGHTNESS := 255
 TW_DEFAULT_BRIGHTNESS := 80
-TW_INCLUDE_FUSE_EXFAT := true
-TWRP_INCLUDE_LOGCAT := true
-TW_INCLUDE_FB2PNG := true
+#TW_INCLUDE_FUSE_EXFAT := true
+#TWRP_INCLUDE_LOGCAT := true
+#TW_INCLUDE_FB2PNG := true
 TW_DEFAULT_LANGUAGE := en

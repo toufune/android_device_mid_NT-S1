@@ -16,5 +16,5 @@
 # limitations under the License.
 #
 
-add_lunch_combo omni_NT-S1-userdebug
-add_lunch_combo omni_NT-S1-eng
+add_lunch_combo omni_NT_S1-userdebug
+add_lunch_combo omni_NT_S1-eng

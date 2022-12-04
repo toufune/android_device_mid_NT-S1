@@ -16,5 +16,5 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/mid/NT-S1
+LOCAL_PATH := device/mid/NT_S1
 
